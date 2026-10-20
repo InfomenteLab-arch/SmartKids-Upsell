@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Smart Kids | Oferta especial</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+
+    body {
+      background: #ffffff;
+      font-family: Arial, sans-serif;
+    }
+
+    .page-block {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      line-height: 0;
+    }
+
+    .page-block img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .offer {
+      position: relative;
+      width: 100%;
+      line-height: normal;
+    }
+
+    .hotmart-widget {
+    position: relative;
+    width: 100%;
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+    #hotmart-sales-funnel {
+      width: 100%;
+      text-align: center;
+    }
+
+   @media (max-width: 600px) {
+    .hotmart-widget {
+        width: 100%;
+    }
+}
+</style>
+</head>
+  <body>
+  <main>
+    <section class="page-block">
+      <img src="1.png" alt="Felicitaciones por tu compra">
+    </section>
+
+    <section class="page-block">
+      <img src="2.png" alt="Espera: conoce esta oferta">
+    </section>
+
+    <section class="page-block">
+      <img src="3.png" alt="Presentación y beneficios de Kids Lab">
+    </section>
+
+    <section class="page-block offer">
+      <img src="4.png" alt="Oferta especial de Kids Lab">
+
+      <div class="hotmart-widget">
+        <div id="hotmart-sales-funnel"></div>
+      </div>
+    </section>
+
+    <section class="page-block">
+      <img src="5.png" alt="Información de Smart Kids">
+    </section>
+  </main>
+
+  <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
+  <script>
+    window.addEventListener("load", function () {
+      if (window.checkoutElements) {
+        window.checkoutElements
+          .init("salesFunnel")
+          .mount("#hotmart-sales-funnel");
+      }
+    });
+  </script>
+</body>
+</html>
